@@ -100,7 +100,7 @@ intitle：搜索网页标题中包含有特定字符的网页。例如intitle: �
 inurl：搜索包含有特定字符的URL。例如inurl:admin，可以用来查找网站后台。
 intext: 搜索网页正文内容中的指定字符，例如intext:操作系统。可以搜索含有‘操作系统’的页面
 Filetype: 搜索指定类型的文件。例如操作系统　fil">
-<meta property="og:updated_time" content="2017-02-06T09:42:01.575Z">
+<meta property="og:updated_time" content="2017-02-06T15:14:07.024Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Google搜索之高级使用篇">
 <meta name="twitter:description" content="基础篇：
@@ -358,6 +358,28 @@ Filetype: 搜索指定类型的文件。例如操作系统　fil">
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hacking/" itemprop="url" rel="index">
+                    <span itemprop="name">hacking</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -416,7 +438,7 @@ Filetype: 搜索指定类型的文件。例如操作系统　fil">
 <li>双引号: 代表完全匹配，使关键词不分开，顺序都不能变。</li>
 <li>减号: 减号与前一个关键词之间一定要有一个空格，与后一个关键词之间一定不能有空格。搜索结果为，匹配前一个关键词但不匹配后一个关键词的结果。例如<code>seo -搜索引擎</code>。</li>
 <li>AND: 逻辑与，这个命令我们其实一直都在用，只是没有意识到。一般用空格代替，还可以用“+”代替。例如<code>霹雳布袋+败亡之剑</code>，返回的结果同时包含两者。</li>
-<li>weather: 查询某一地区或城市的天气。不过我们这一地区或城市必须是Google能识别的，例<code>：weather:beiji</code>ng，Google将会给我们返回北京的天气。</li>
+<li>weather: 查询某一地区或城市的天气。不过我们这一地区或城市必须是Google能识别的，例<code>weather:beijing</code>，Google将会给我们返回北京的天气。</li>
 <li>星号（*）: 通配符，可以匹配任意字符串。例如<code>搜索*擎</code>，则返回的结果中不仅有“搜索引擎”，还有“搜索巨擎”之类的。</li>
 <li>allinurl: 结果的url中包含多个关键词。例如<code>allinurl:byr jobs</code>，等于inurl:byr inurl:jobs。allinurl也是排他性指令</li>
 <li>define: 查询关键词的词义，起的是字典的作用。Google会返回包含查询关键词定义的网页，例<code>define:computer</code>，支持汉字哦！</li>
@@ -424,7 +446,7 @@ Filetype: 搜索指定类型的文件。例如操作系统　fil">
 </blockquote>
 <h6 id="进阶篇："><a href="#进阶篇：" class="headerlink" title="进阶篇："></a>进阶篇：</h6><blockquote>
 <ul>
-<li>查找后台地址：site:域名 inurl:login|admin|manage|member|admin_login|login_admin|system|login|user|main|cms</li>
+<li>查找后台地址：site:域名<br>inurl:login|admin|manage|member|admin_login|login_admin|system|login|user|main|cms</li>
 <li>查找文本内容：site:域名 intext:管理|后台|登陆|用户名|密码|验证码|系统|帐号|admin|login|sys|managetem|password|username</li>
 <li>查找可注入点：site:域名 inurl:aspx|jsp|php|asp</li>
 <li>查找上传漏洞：site:域名 inurl:file|load|editor|Files</li>
@@ -493,6 +515,10 @@ Filetype: 搜索指定类型的文件。例如操作系统　fil">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/13/逃离滨江/" rel="prev" title="逃离滨江">
+                逃离滨江 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -566,7 +592,7 @@ Filetype: 搜索指定类型的文件。例如操作系统　fil">
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -575,7 +601,7 @@ Filetype: 搜索指定类型的文件。例如操作系统　fil">
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -584,7 +610,7 @@ Filetype: 搜索指定类型的文件。例如操作系统　fil">
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
