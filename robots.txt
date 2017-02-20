@@ -1,13 +1,15 @@
-#hexo robots.txt
+# hexo robots.txt
 User-agent: *
 Allow: /
 Allow: /archives/
+
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
-Sitemap: http://buleshit.github.io/search.xml
-Sitemap: http://buleshit.github.io/sitemap.xml
-Sitemap: http://buleshit.github.io/baidusitemap.xml
+
+Sitemap: http://buleshit.xyz/search.xml
+Sitemap: http://buleshit.xyz/sitemap.xml
+Sitemap: http://buleshit.xyz/baidusitemap.xml
