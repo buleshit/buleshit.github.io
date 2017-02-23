@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[博客提交百度验证失败]]></title>
+      <url>%2F2017%2F02%2F20%2F%E5%8D%9A%E5%AE%A2%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E9%AA%8C%E8%AF%81%E5%A4%B1%E8%B4%A5%2F</url>
+      <content type="text"><![CDATA[起始听说建好的博客不被收录就不会被人搜到，能忍？！提交百度验证，多次失败后得知，百度不收录github.io这种二级域名，崩溃。方式多日之后，斥巨资购买国际顶级域名（6元，年前还是1元的-_-\）。但是多次验证尝试之后，还是失败。先简单描述下三种验证方式：文件验证：您需要下载验证文件，将文件上传至您的服务器，放置于域名根目录下。html标签验证：将html标签添加至网站首页html代码的&lt;head&gt;标签与&lt;/head&gt;标签之间。CNAME验证：您需要登录域名提供商或托管服务提供商的网站，添加新的DNS记录。验证完成后，我们将会认为您是网站的拥有者。为使您的网站一直保持验证通过的状态，请保留验证的文件、html标签或CNAME记录，我们会去定期检查验证记录。301重定向我一直采用的是html文件验证方式，有人表示前两种失败的话可以采用第三种。问题是我已经杠上了。于是乎，我用www.buleshit.xyz提交验证，但是结果一直是301失败。。多次尝试无果之后，尝试用buleshit.xyz提交验证，结果返回：转机文件不符说明内容不一致，先后查看本地source目录和github根目录，最终发现本地得html验证文件在hexo g生成博客的时候对验证文件做了处理。知道这个就好办了，直接登录github，找到上传的html验证文件，将文件内容修改为初始内容。然后回到百度站长平台点击验证。。其实，能直接修改的原因是，验证一次就通过了，无需再次验证。至此，才发现之前自己手动点击的验证，弹出来的界面是经过处理的html文件，因为只关注了内容，并未发现页面细节。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[hexo博客加速之页面压缩]]></title>
       <url>%2F2017%2F02%2F17%2Fhexo%E5%8D%9A%E5%AE%A2%E5%8A%A0%E9%80%9F%E4%B9%8B%E9%A1%B5%E9%9D%A2%E5%8E%8B%E7%BC%A9%2F</url>
       <content type="text"><![CDATA[hexo博客页面大量留白原因因为markdown转html的bug，致使生成的html留有大量的空白，十分的难看，另外就是由于性能原因，需要对js和css进行压缩。寻求改善方法在网络的海洋里搜寻好久，终于找到了一个hexo插件hexo-neat。作者在此：https://segmentfault.com/a/1190000005799759配置方法1、下载方法：npm install hexo-neat --save2、在博客的站点配置文件中添加如下配置：12345678910111213141516##hexo-neat页面压缩neat_enable: true neat_html: enable: true exclude: neat_css: enable: true exclude: - &apos;*.min.css&apos;neat_js: enable: true mangle: true output: compress: exclude: - &apos;*.min.js&apos;启用hexo-neat的基础上，可以选择是否压缩HTML、CSS、Js文件，均有相应的开关选项。3、配置完成后生成博客就行。]]></content>
