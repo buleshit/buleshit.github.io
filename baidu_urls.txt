@@ -1,5 +1,5 @@
+buleshit.xyz/2017/06/22/3秒搭建文件共享服务器/
 buleshit.xyz/2017/03/28/面试研究所/
 buleshit.xyz/2017/03/28/没有技术不可耻，拿无耻来骗人要制止/
 buleshit.xyz/2017/03/09/学写谷歌扩展/
 buleshit.xyz/2017/02/20/博客提交百度验证失败/
-buleshit.xyz/2017/02/17/hexo博客加速之页面压缩/
